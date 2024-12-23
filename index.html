@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leep Year </title>
+    <style>
+        *{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: black; padding: 50px; margin-top: 200px;">
+        
+    <h1 id="txt" style="text-align: center; color: aliceblue; font-size: 50px; font-family: sans-serif;"> Lep Year</h1>
+
+    </div>
+
+
+   <script>
+
+var year= prompt(" Enter Year : ")
+var lepYear = year % 4 ;
+    if (lepYear==0){
+        const yes=year + " Yes This is Leep Year"  
+        document.getElementById('txt').innerText=yes;
+    }
+     else{
+         const not=year + " This is't Leep Year"
+         document.getElementById('txt').innerText=not;
+     }
+
+
+   </script>
+</body>
+</html>
